@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="codeToSVG">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="lfkdsk">
+
+    <title>CodeToSVG</title>
+    <script src="javascripts/d3.min.js" charset="utf-8"></script>
+    <script src="javascripts/dagre-d3.min.js"></script>
+    <script src="javascripts/JQ.js"></script>
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/application.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/cover.css" rel="stylesheet">
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body ng-controller="MainController">
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Build A New Graph.
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p style="font-size: 14px;border-bottom-style: none">
+                    <code class="JavaScript">
+                        var graph = getGraph();
+                    </code>
+                </p>
+                <textarea id="textView" class="form-control" rows="8" ng-module="lfkdsk"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary"
+                        ng-click="report()">
+                    提交
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">CodeToSVG</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="inner cover">
+                <div class="first-page" id="first-page">
+                    <h1 class="cover-heading">Convert your code To SVG</h1>
+                    <p class="lead">CodeToSVG is a website that can convert your JavaScripts code to Flow Chart.
+                        Thx to <a href="https://github.com/cpettitt/dagre-d3">cpettitt</a></p>
+                    <p class="lead">
+                        <a type="button" class="btn btn-lg btn-default" data-toggle="modal"
+                           data-target="#myModal" ng-click="openDialog()"> Get Start !</a>
+                    </p>
+                </div>
+            </div>
+            <div class="svg-page" id="svg-page" style="display:none">
+                <svg width="1024" height="768">
+                    <g/>
+                </svg>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Author's github <a href="https://github.com/lfkdsk">lfkdsk</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
