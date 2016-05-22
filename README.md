@@ -1,5 +1,10 @@
 # 练习代码
 
+
+## 没有东西可写也要保持编程的状态。
+
+
+
 ## License
 
     Copyright 2015 [刘丰恺](http://www.cnblogs.com/lfk-dsk/)
