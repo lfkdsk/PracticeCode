@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chlorophy.hobby.main.settings.ExplorerSetting">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/extoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.chlorophy.hobby.freutil.ui.FileExplorer.FileExplorer
+        android:id="@+id/explorerproj"
+        android:layout_below="@+id/extoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.chlorophy.hobby.freutil.ui.FileExplorer.FileExplorer>
+
+</RelativeLayout>

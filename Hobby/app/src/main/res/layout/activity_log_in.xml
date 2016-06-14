@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#000"
+    android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LogInActivity">
+
+    <ImageView android:id="@+id/iconView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/dollars_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <ImageButton android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/enter_button"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText android:id="@+id/nameEdit"
+        android:background="@drawable/edit_bg"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLength="12"
+        android:hint="Input Your Mobile"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="66dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/iconView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText android:id="@+id/pswEdit"
+        android:background="@drawable/edit_bg"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:hint="Input Your Password"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/nameEdit"
+        android:layout_alignLeft="@+id/nameEdit"
+        android:layout_alignStart="@+id/nameEdit"
+        android:layout_alignRight="@+id/nameEdit"
+        android:layout_alignEnd="@+id/nameEdit" />
+
+</RelativeLayout>

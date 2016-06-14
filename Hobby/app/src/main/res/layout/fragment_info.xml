@@ -1,0 +1,126 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal|top">
+
+    <AnalogClock android:id="@+id/chrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:listDivider"
+        android:layout_above="@+id/infoIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/view" />
+
+    <com.chlorophy.hobby.freutil.ui.CircleImageView.CircleImageView
+        android:id="@+id/infoIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_default"
+        app:border_width="2dp"
+        app:border_color="#ff7f7c83"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/infoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="#FFF"
+        android:shadowColor="#ff7f7c83"
+        android:shadowRadius="20.0"
+        android:layout_alignTop="@+id/infoIcon"
+        android:layout_alignBottom="@+id/infoIcon"
+        android:layout_toRightOf="@+id/infoIcon"
+        android:layout_marginLeft="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:listDivider"
+        android:layout_below="@+id/infoIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
+
+    <ImageView
+        android:id="@+id/creditIcon"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_credit"
+        android:layout_alignTop="@+id/infoCredit"
+        android:layout_alignBottom="@+id/infoCredit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView android:id="@+id/infoCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit: 0"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:shadowColor="#ffff6a19"
+        android:shadowRadius="20.0"
+        android:layout_below="@+id/infoIcon"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/creditIcon"/>
+
+    <ImageView
+        android:id="@+id/projIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_proj"
+        android:layout_alignBottom="@+id/infoProjs"
+        android:layout_alignTop="@+id/infoProjs"
+        android:layout_alignLeft="@+id/creditIcon"
+        android:layout_alignStart="@+id/creditIcon"
+        android:layout_toStartOf="@+id/infoCredit"
+        android:layout_toLeftOf="@+id/infoCredit" />
+
+    <TextView android:id="@+id/infoProjs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync Projs: 0"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#ffff6a19"
+        android:shadowRadius="20.0"
+        android:layout_below="@+id/infoCredit"
+        android:layout_alignLeft="@+id/infoCredit"
+        android:layout_alignStart="@+id/infoCredit" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:listDivider"
+        android:layout_below="@+id/infoProjs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton android:id="@+id/infoButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icon_off"
+        android:layout_below="@+id/infoProjs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

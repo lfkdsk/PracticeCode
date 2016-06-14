@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hobby</string>
+    <string name="title_activity_main">Hobby</string>
+
+    <string name="title_activity_proj">Hobby</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_proj_settings">Set Proj Name</string>
+
+    <string name="action_settings">返回根目录</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_proj_chrome_list">ProjChromeList</string>
+    <string name="title_activity_explorer_setting">ExplorerSetting</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

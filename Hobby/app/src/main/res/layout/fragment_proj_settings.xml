@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/projSettings"
+    tools:context="com.chlorophy.hobby.main.settings.ProjSettingsActivity.ProjSettingsFragment"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/radius_rec_top">
+
+    <Switch android:id="@+id/settingSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="项目新建完成"
+        android:textOff="滑动开启--->>>"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar android:id="@+id/settingProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <EditText android:id="@+id/settingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Project Name"
+        android:gravity="center"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

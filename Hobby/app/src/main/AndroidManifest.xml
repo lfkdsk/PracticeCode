@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chlorophy.hobby" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 发送短信验证码的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".login.LogInActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".main.settings.ProjSettingsActivity"
+            android:label="@string/title_activity_proj_settings"
+            android:theme="@style/AppTheme.Dialog" >
+        </activity>
+        <activity
+            android:name=".login.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.Dialog" >
+        </activity>
+        <activity
+            android:name=".main.ProjChromeList"
+            android:label="@string/title_activity_proj_chrome_list" >
+        </activity>
+        <activity
+            android:name=".proj.ExplorerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".proj.CodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.Base" >
+            <intent-filter>
+        </activity>
+        <activity
+            android:name=".main.settings.ExplorerSetting"
+            android:label="@string/title_activity_explorer_setting" >
+        </activity>
+    </application>
+
+</manifest>
