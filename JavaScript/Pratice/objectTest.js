@@ -8,4 +8,7 @@ var lfkdsk = {
     skill: alert
 };
 
+lfkdsk.name = 12;
 console.log(lfkdsk);
+console.log('type' in lfkdsk);
+console.log(lfkdsk.hasOwnProperty('toString'));
