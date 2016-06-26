@@ -44,10 +44,21 @@ foo(100, 'dddd', 'opopop', true);
 // lfkdskll(11, 22, 22222, 'fffff');
 
 
-function lfkdskll() {
-    for (let i = 0; i < 1000; i++) {
-        console.log(i);
-    }
-}
+// function lfkdskll() {
+//     for (let i = 0; i < 1000; i++) {
+//         console.log(i);
+//     }
+// }
 
-lfkdskll();
+// lfkdskll();
+
+var myself = {
+    birth: 1996,
+    age: function () {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+};
+
+console.log(myself.age());
+
