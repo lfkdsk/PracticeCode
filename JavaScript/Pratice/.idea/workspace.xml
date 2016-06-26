@@ -21,28 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="objectTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/objectTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="method.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/method.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1647">
-              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="funcTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/funcTest.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arrowFunctionTest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="arrowFunctionTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arrowFunctionTest.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
@@ -97,12 +75,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reduceTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reduceTest.js">
+      <file leaf-file-name="generatorTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generatorTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="309">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc;n#nextCount#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsonTest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jsonTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,6 +158,9 @@
         <option value="$PROJECT_DIR$/applyTest.js" />
         <option value="$PROJECT_DIR$/returnFunctionTest.js" />
         <option value="$PROJECT_DIR$/arrowFunctionTest.js" />
+        <option value="$PROJECT_DIR$/generatorTest.js" />
+        <option value="$PROJECT_DIR$/regTest.js" />
+        <option value="$PROJECT_DIR$/jsonTest.js" />
       </list>
     </option>
   </component>
@@ -226,20 +233,20 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.2.2" />
   </component>
-  <component name="RunManager" selected="Node.js.arrowFunctionTest.js">
-    <configuration default="false" name="filterTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="filterTest.js" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
-    <configuration default="false" name="sortTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="sortTest.js" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.jsonTest.js">
     <configuration default="false" name="returnFunctionTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="returnFunctionTest.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="applyTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="applyTest.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="arrowFunctionTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="arrowFunctionTest.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="arrowFunctionTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="arrowFunctionTest.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="generatorTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="generatorTest.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="regTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="regTest.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="jsonTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="jsonTest.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -290,19 +297,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.filterTest.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.sortTest.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.returnFunctionTest.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.applyTest.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.arrowFunctionTest.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.returnFunctionTest.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.arrowFunctionTest.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.generatorTest.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.regTest.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.jsonTest.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.arrowFunctionTest.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.returnFunctionTest.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.applyTest.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.sortTest.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.filterTest.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.jsonTest.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.regTest.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.generatorTest.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.arrowFunctionTest.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.returnFunctionTest.js" />
       </list>
     </recent_temporary>
   </component>
@@ -316,12 +323,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1466842693077</updated>
-      <workItem from="1466842695452" duration="14570000" />
+      <workItem from="1466842695452" duration="17209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14570000" />
+    <option name="totallyTimeSpent" value="17209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -462,6 +469,36 @@
         <state relative-caret-position="27">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc;n#nextCount#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
