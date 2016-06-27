@@ -12,6 +12,7 @@ public class SecretReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         SpUtils.put(context, "key", 1);
+//        Path
         // TODO: This method is called when the BroadcastReceiver is receiving
         // an Intent broadcast.
 //        throw new UnsupportedOperationException("Not yet implemented");
