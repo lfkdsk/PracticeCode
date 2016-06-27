@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+    <script src="tree.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var canvas = document.getElementById('mycanvas');
+            var ctx = canvas.getContext('2d');
+            drawTree(ctx, 320, 470, 60, -Math.PI / 2, 12, 12);
+        });
+    </script>
+</head>
+<body>
+<canvas id="mycanvas"  width=640 height=480></canvas>
+</body>
+</html>
