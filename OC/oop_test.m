@@ -30,12 +30,14 @@ typedef struct {
 } Shape;
 
 
-void drawShapes(id shapes[], int count){
+void drawShapes(Shape shapes[], int count){
     int i;
     
     for (int i = 0; i < count; i++) {
-        id shape = shapes[i];
-        [shape draw];
+        NSLog(@"(%d, %d, %d, %d)",shapes[i].bounds.x,
+              shapes[i].bounds.y,
+              shapes[i].bounds.width,
+              shapes[i].bounds.heigh);
     }
 }
 

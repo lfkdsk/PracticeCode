@@ -88,6 +88,9 @@
 		52617FD81D2DC7D100C39034 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "刘丰恺";
 				TargetAttributes = {
@@ -228,7 +231,7 @@
 				52617FE61D2DC7D100C39034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		52617FE71D2DC7D100C39034 /* Build configuration list for PBXNativeTarget "OCTrain" */ = {
 			isa = XCConfigurationList;
@@ -237,6 +240,7 @@
 				52617FE91D2DC7D100C39034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

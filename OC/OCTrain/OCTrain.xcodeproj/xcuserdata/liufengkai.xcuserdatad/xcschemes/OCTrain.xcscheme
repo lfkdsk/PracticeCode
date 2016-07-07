@@ -61,6 +61,12 @@
             ReferencedContainer = "container:OCTrain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/liufengkai/Documents/Projects/PracticeCode/OC/OCTrain/tmp/word.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
