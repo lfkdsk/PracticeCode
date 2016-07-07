@@ -23,13 +23,13 @@ typedef struct {
     int x, y, width, heigh;
 } ShapeRect;
 
-//typedef struct {
-//    ShapeType type;
-//    ShapeColor fillColor;
-//    ShapeRect bounds;
-//} Shape;
+typedef struct {
+    ShapeType type;
+    ShapeColor fillColor;
+    ShapeRect bounds;
+} Shape;
 
-@interface Shape : NSObject {
+@interface Circle : NSObject {
     ShapeColor fillColor;
     ShapeRect  bounds;
 }
@@ -42,7 +42,7 @@ typedef struct {
 
 @end
 
-@implementation Shape
+@implementation Circle
 
 - (void) setFillColor:(ShapeColor) fillColor {
     self->fillColor = fillColor;
@@ -60,30 +60,12 @@ typedef struct {
 
 @end
 
-/*
-  继承类不必在声明实例变量
- */
- 
-@interface Trangle : Shape
-
-@end
-
-@implementation Trangle
-
-- (void) draw {
-    NSLog(@"trangle");
-    NSLog(@"drawing a circle at (%d %d %d %d)",
-          bounds.x,bounds.y, bounds.width, bounds.heigh);
-    NSLog(@"color %id", fillColor);
-}
-
-@end
 
 int main(int argc, const char * argv[]) {
     
     id shapes[1];
     ShapeRect rect0 = {0,0,10,30};
-    shapes[0] = [Trangle new];
+    shapes[0] = [Circle new];
     [shapes[0] setBounds:rect0];
     [shapes[0] setFillColor:kRedColor];
     [shapes[0] draw];
