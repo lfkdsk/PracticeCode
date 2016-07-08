@@ -6,11 +6,30 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Engine.h"
-#import "Tire.h"
 
-//@class Engine;
-//@class Tire;
+@interface Tire : NSObject
+@end
+
+@implementation Tire
+    /* description 方法就是NSLog方法打印对象默认调用的方法 */
+- (NSString *) description {
+    return (@"I'm a tire. I last a while");
+}
+
+@end
+
+//////////////////
+
+@interface Engine : NSObject
+@end
+@implementation Engine
+
+- (NSString *) description {
+    return @"I'm an Engine";
+}
+
+@end
+///////////////////
 
 @interface Car : NSObject {
     Engine *engine;

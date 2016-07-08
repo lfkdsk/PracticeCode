@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52617FE41D2DC7D100C39034 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52617FE31D2DC7D100C39034 /* main.m */; };
+		52C645191D2F38F1008F9608 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C645181D2F38F1008F9608 /* Engine.m */; };
+		52C6451C1D2F39C8008F9608 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6451B1D2F39C8008F9608 /* Tire.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		52617FE01D2DC7D100C39034 /* OCTrain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCTrain; sourceTree = BUILT_PRODUCTS_DIR; };
 		52617FE31D2DC7D100C39034 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52C645171D2F38E5008F9608 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		52C645181D2F38F1008F9608 /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		52C6451A1D2F39A1008F9608 /* Tire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
+		52C6451B1D2F39C8008F9608 /* Tire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				52617FE31D2DC7D100C39034 /* main.m */,
+				52C645171D2F38E5008F9608 /* Engine.h */,
+				52C645181D2F38F1008F9608 /* Engine.m */,
+				52C6451A1D2F39A1008F9608 /* Tire.h */,
+				52C6451B1D2F39C8008F9608 /* Tire.m */,
 			);
 			path = OCTrain;
 			sourceTree = "<group>";
@@ -122,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52617FE41D2DC7D100C39034 /* main.m in Sources */,
+				52C6451C1D2F39C8008F9608 /* Tire.m in Sources */,
+				52C645191D2F38F1008F9608 /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
