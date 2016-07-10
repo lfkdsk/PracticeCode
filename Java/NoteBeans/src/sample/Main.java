@@ -56,7 +56,7 @@ public class Main extends Application {
                 int size = c.getAddedSubList().get(0).length();
 //                System.out.println(size);
 //                System.out.println(c);
-                if (size >= 1){
+                if (size >= 1) {
                     System.out.println(c.getAddedSubList().get(0).charAt(size - 1));
                     builder.input(c.getAddedSubList().get(0).charAt(size - 1));
                 }
