@@ -2,8 +2,6 @@ package sample;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by liufengkai on 16/7/10.
@@ -21,8 +19,6 @@ public class DfaBuilder {
      * 接受状态
      */
     public HashMap<Integer, DfaState> acceptState;
-
-    public Set<DfaState> endState;
 
     private static final int RETURN_ID = 13;
 
@@ -59,7 +55,6 @@ public class DfaBuilder {
     private void initial() {
         this.acceptState = new HashMap<>();
         this.endIdList = new ArrayList<>();
-        this.endState = new HashSet<>();
         initialEndIdList();
     }
 
@@ -129,6 +124,9 @@ public class DfaBuilder {
         }
     }
 
+    /**
+     * 重设startState
+     */
     public void resetStartState() {
         this.currentState = startState;
     }

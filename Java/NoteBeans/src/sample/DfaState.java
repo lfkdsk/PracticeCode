@@ -5,7 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by liufengkai on 16/7/10.
+ * Dfa 状态
+ *
+ * @author liufengkai
+ *         Created by liufengkai on 16/7/10.
  */
 public class DfaState implements Comparable<DfaState> {
 
@@ -24,6 +27,12 @@ public class DfaState implements Comparable<DfaState> {
 
     private Integer parentInput;
 
+    /**
+     * 构造方法
+     *
+     * @param input       输入串
+     * @param parentState 父节点
+     */
     public DfaState(Integer input, DfaState parentState) {
         this.parentInput = input;
         this.parentState = parentState;
@@ -76,6 +85,9 @@ public class DfaState implements Comparable<DfaState> {
         return parentInput;
     }
 
+    /**
+     * 打印状态
+     */
     public void printState() {
         System.out.println("state : " + getStateId());
         for (Integer integer : transitionSet.keySet()) {
@@ -86,6 +98,11 @@ public class DfaState implements Comparable<DfaState> {
         }
     }
 
+    /**
+     * 返回结束状态
+     *
+     * @param list 传入结束状态
+     */
     public void returnEndList(ArrayList<DfaState> list) {
         for (Integer key : transitionSet.keySet()) {
             DfaState cur = transitionSet.get(key);
