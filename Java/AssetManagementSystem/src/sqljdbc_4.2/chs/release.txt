@@ -1,0 +1,154 @@
+﻿版本信息
+Microsoft JDBC Driver 4.2 for SQL Server
+2015 年 8 月
+
+------------
+简介
+------------
+此文件包含为 Microsoft JDBC Driver 4.2 for SQL Server 文档提供补充的最新信息或其他重要信息。 
+您应先阅读此文件的完整内容，然后再安装 JDBC 驱动程序。
+
+您的反馈对于我们非常重要，我们将力求及时回复您的反馈。 有关使用 JDBC 驱动程序博客和在线论坛提供反馈的信息， 
+请参阅 Microsoft JDBC Driver 4.2 for SQL Server 页面，网址为 http://msdn.microsoft.com/data/jdbc。
+
+
+------------
+安装
+------------
+install.txt 中提供了有关安装 JDBC 驱动程序的说明。请参阅该文件获取 有关如何在 Windows 和 Unix 
+操作系统上安装 JDBC 驱动程序的信息。
+
+
+---------------------------
+支持的操作系统
+---------------------------
+Microsoft JDBC Driver 4.2 for SQL Server 支持的操作系统包括：
+  Windows Server 2008 SP2
+  Windows Server 2008 R2 SP1
+  Windows Server 2012
+  Windows Server 2012 R2
+  Windows Vista SP2
+  Windows 7 SP1
+  Windows 8
+  Windows 8.1
+  Windows 10
+  Linux
+  Unix
+
+以上列表列举了一些受支持的操作系统示例。JDBC 驱动程序设计为可在 任何支持使用 Java 虚拟机 (JVM) 
+的操作系统上工作。但是，仅 Oracle Solaris (x86)、SUSE Linux 以及 Windows Vista Service Pack 2 
+或更高版本的操作系统 经过了测试。
+
+
+----------------
+版本内容
+----------------
+Microsoft JDBC Driver 4.2 for SQL Server 可执行 zip 或 tar 文件将以下文件解压缩 
+到指定的位置（相对于所选安装目录）：
+
+<installation directory>\sqljdbc_<version>\<language>\install.txt
+<installation directory>\sqljdbc_<version>\<language>\release.txt
+<installation directory>\sqljdbc_<version>\<language>\license.txt
+<installation directory>\sqljdbc_<version>\<language>\sqljdbc.jar
+<installation directory>\sqljdbc_<version>\<language>\sqljdbc4.jar
+<installation directory>\sqljdbc_<version>\<language>\sqljdbc41.jar
+<installation directory>\sqljdbc_<version>\<language>\sqljdbc42.jar
+<installation directory>\sqljdbc_<version>\<language>\auth\x86\sqljdbc_auth.dll
+<installation directory>\sqljdbc_<version>\<language>\auth\x64\sqljdbc_auth.dll
+<installation directory>\sqljdbc_<version>\<language>\samples\<sample files...>
+<installation directory>\sqljdbc_<version>\<language>\xa\xa_install.sql
+<installation directory>\sqljdbc_<version>\<language>\xa\x86\sqljdbc_xa.dll
+<installation directory>\sqljdbc_<version>\<language>\xa\x64\sqljdbc_xa.dll
+
+有关每个组件的详细信息，请参阅联机文档 
+Microsoft JDBC Driver for SQL Server 文档： 
+https://msdn.microsoft.com/en-us/library/dn197850(v=sql.10).aspx
+
+文档：
+-------------
+此版本信息、安装说明和许可证条款包括在此安装包中。 
+可以联机找到所有其他文档。
+
+请注意，脱机帮助文件已停用。有用提示：如果您需要脱机 文档，您可以直接在 MSDN 中导出页面 - 
+只需在 Web 浏览器的右上角查找 “导出”功能。
+
+
+JAR 文件：
+---------
+为了支持向后兼容和可能的升级方案，JDBC Driver 4.2 在每个安装包中都包括了 
+四个 JAR 类库：sqljdbc.jar、sqljdbc4.jar、sqljdbc41.jar 和 sqljdbc42.jar。  
+
+重要提示：所提供的 sqljdbc.jar 和 sqljdbc4.jar 仅用于向后兼容，不包含 
+此版本随附的新功能。仅 sqljdbc41.jar 和 sqljdbc42.jar 
+包含新功能。
+
+
+功能特定的文件：
+---------
+集成的身份验证（在 Windows 上）组件包括在 auth 目录中。
+
+JDBC 分布式事务组件包含在 xa 目录中。
+
+
+示例：
+-------
+演示 JDBC 驱动程序的各项功能的示例应用程序包含在 samples 
+目录中。有关每个示例以及如何运行它们的更多详细信息，请参阅联机 
+文档。
+
+
+-----------
+更改列表
+-----------
+从 4.1 到 4.2 的更改：
+
+JDBC 驱动程序现在支持 Java 开发工具包 (JDK) 版本 8 并且包括新的 jar 文件  
+sqljdbc42.jar，该文件与 JDBC 4.2 API 兼容。
+
+已升级 sqljdbc41.jar 以便与 JDBC 4.1 API 兼容。
+
+增强了超时设置控制，用于回滚 XA 事务
+
+更新了 Azure 中发生重定向时 SSL 证书的验证方式
+
+添加了 serverSpn 连接属性以在指定 Kerberos 主体时提供灵活性（以及在 
+客户端的默认领域与服务器不同时，允许跨领域连接）。
+
+新增功能：批量复制 - 应用程序开发人员现在可以使用 Java 编写代码解决方案以便快速地将 
+大量数据从任何可使用 ResultSet 实例或从 CSV 文件读取的数据源批量复制到 
+SQL Server。
+
+
+------------
+已知问题
+------------
+下面是有关 Microsoft JDBC Driver 4.2 for SQL Server 的已知问题：
+
+1) SQL MERGE 语句的参数元数据限制
+
+PreparedStatement.getParameterMetadata() 在用于
+参数化 MERGE 查询时引发 SQLException。
+
+
+2) JavaKerberos 和 IBM VM
+
+如果在 Windows 环境下运行，可能必须在配置文件中指定 principalname 
+以便让 Java Kerberos 工作。例如： 
+SQLJDBCDriver {
+需要 com.ibm.security.auth.module.Krb5LoginModule
+seDefaultCcache=true
+credsType=initiator
+principal=principalname@principaldomain;
+};
+
+
+3) 与 SQL AZURE 的连接被断开
+
+连接到 SQL Azure 时，空闲连接在处于不活动状态一定时间后可能被某个网络组件（如 
+防火墙）终止。若要避免网络组件断开空闲连接，应在加载驱动程序的 
+操作系统上设置以下注册表设置（或其非 Windows 同等设置）：
+           
+注册表设置                                                                                     推荐值
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveTime            30000
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveInterval         1000
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmission  10
